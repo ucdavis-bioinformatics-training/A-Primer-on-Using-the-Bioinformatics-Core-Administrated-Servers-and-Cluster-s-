@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#SBATCH --job-name=arrayJob # Job name
+#SBATCH --job-name=jobname # Job name
 #SBATCH --array=1-5
 #SBATCH --nodes=1
 #SBATCH --ntasks=20 # Number of cores
@@ -9,7 +9,7 @@
 #SBATCH --output=arrayJob_%A_%a.out # File to which STDOUT will be written
 #SBATCH --error=arrayJob_%A_%a.err # File to which STDERR will be written
 #SBATCH --mail-type=END # Type of email notification- BEGIN,END,FAIL,ALL
-#SBATCH --mail-user=settles@ucdavis.edu # Email to which notifications will be sent
+#SBATCH --mail-user=you@gmail.com # Email to which notifications will be sent
 
 start=`date +%s`
 
