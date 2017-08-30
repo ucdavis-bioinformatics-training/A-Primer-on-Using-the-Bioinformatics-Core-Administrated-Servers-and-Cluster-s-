@@ -13,7 +13,7 @@
 
 start=`date +%s`
 
-echo hostname
+hostname
 
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 
