@@ -7,13 +7,17 @@
 #SBATCH --time=0-01:30:00  # expected time of completion in hours, minutes, seconds, default 1-day
 #SBATCH --output=my_output.out # STDOUT
 #SBATCH --error=my_output.err # STDERR
-#SBATCH --mail-user=you@gmail.com # does not work yet
-#SBATCH --mail-type=ALL # does not work yet
+#SBATCH --mail-user=you@gmail.com
+#SBATCH --mail-type=ALL
+
 # This will be run once for a single process 
 /bin/hostname
 start=`date +%s`
+
 module load blat/v.35-fastq
+
 echo “HELLO”
+
 end=`date +%s`
 runtime=$((end-start))
 echo $runtime
