@@ -19,7 +19,7 @@ echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 
 THREADS=20
 
-sample=`sed "${SLURM_ARRAY_TASK_ID}q;d" samples.txt`
+sample=`sed "${SLURM_ARRAY_TASK_ID}q;d" task_samples.txt`
 
 rawpath=’00-RawData/'
 mappath='02-STAR/'
